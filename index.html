@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMagic - Free Automation Tools</title>
+    <style>
+        /* CSS Styles */
+        :root {
+            --primary: #4e54c8;
+            --secondary: #8f94fb;
+            --accent: #f5f7fa;
+            --text: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--accent);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .automation-demo {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .code-block {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 1rem;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        footer {
+            background: var(--text);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoMagic</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero">
+            <h1>Automate Your Workflow For Free</h1>
+            <p>Discover powerful automation tools that will save you hours of repetitive work. No coding required!</p>
+            <a href="#demo" class="btn">Try Live Demo</a>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Browser Automation</h3>
+                    <p>Automate repetitive browser tasks like form filling, data extraction, and web scraping with our easy-to-use tools.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>File Management</h3>
+                    <p>Automatically organize, rename, and process files in bulk. Save hours of manual file handling.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Social Media Automation</h3>
+                    <p>Schedule posts, auto-respond to messages, and analyze your social media performance.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Email Automation</h3>
+                    <p>Create email sequences, auto-responders, and smart filters to manage your inbox efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Data Processing</h3>
+                    <p>Transform and analyze data automatically between different formats and applications.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Custom Workflows</h3>
+                    <p>Build your own automation sequences by connecting different apps and services.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="tools">
+            <h2>Free Automation Tools</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Zapier</h3>
+                    <p>Connect your apps and automate workflows with 100+ free zaps per month.</p>
+                    <a href="https://zapier.com" target="_blank" class="btn">Visit</a>
+                </div>
+                <div class="feature-card">
+                    <h3>IFTTT</h3>
+                    <p>Create simple automations (applets) between web services and IoT devices.</p>
+                    <a href="https://ifttt.com" target="_blank" class="btn">Visit</a>
+                </div>
+                <div class="feature-card">
+                    <h3>AutoHotkey</h3>
+                    <p>Powerful desktop automation for Windows with scripting capabilities.</p>
+                    <a href="https://www.autohotkey.com" target="_blank" class="btn">Visit</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="demo" class="automation-demo">
+            <h2>Live Automation Demo</h2>
+            <p>Try our simple browser automation demo below:</p>
+            
+            <div style="margin: 2rem 0;">
+                <button id="demoBtn" class="btn">Run Demo Automation</button>
+                <div id="demoOutput" style="margin-top: 1rem; padding: 1rem; background: #f0f0f0; border-radius: 5px; min-height: 50px;"></div>
+            </div>
+            
+            <h3>Sample Automation Code</h3>
+            <div class="code-block">
+// JavaScript automation example
+function automateTask() {
+  // Simulate data processing
+  let results = [];
+  for(let i = 1; i <= 5; i++) {
+    results.push(`Processed item ${i}`);
+  }
+  
+  // Simulate API call
+  setTimeout(() => {
+    return results.join(", ");
+  }, 1500);
+}
+
+// Run when button is clicked
+document.getElementById('demoBtn').addEventListener('click', function() {
+  const output = document.getElementById('demoOutput');
+  output.textContent = "Running automation...";
+  
+  setTimeout(() => {
+    output.textContent = "Automation complete! Processed: item 1, item 2, item 3, item 4, item 5";
+  }, 2000);
+});
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Get Started With Automation</h2>
+            <p>Have questions or need help setting up your automations? Contact us!</p>
+            
+            <form style="margin-top: 2rem; max-width: 600px;">
+                <div style="margin-bottom: 1rem;">
+                    <label for="name" style="display: block; margin-bottom: 0.5rem;">Name</label>
+                    <input type="text" id="name" style="width: 100%; padding: 0.8rem; border-radius: 5px; border: 1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
+                    <input type="email" id="email" style="width: 100%; padding: 0.8rem; border-radius: 5px; border: 1px solid #ddd;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message" style="display: block; margin-bottom: 0.5rem;">Message</label>
+                    <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem; border-radius: 5px; border: 1px solid #ddd;"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 AutoMagic - Free Automation Tools</p>
+        <p style="margin-top: 1rem;">This is a static demo website. For actual automation, use the recommended tools.</p>
+    </footer>
+
+    <script>
+        // JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Demo button functionality
+            document.getElementById('demoBtn').addEventListener('click', function() {
+                const output = document.getElementById('demoOutput');
+                output.textContent = "Running automation...";
+                
+                setTimeout(() => {
+                    output.textContent = "Automation complete! Processed: item 1, item 2, item 3, item 4, item 5";
+                }, 2000);
+            });
+            
+            // Simple form handling (just for demo - doesn't actually submit)
+            document.querySelector('form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! This is a demo so no data was actually sent.');
+                this.reset();
+            });
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
